@@ -22,10 +22,10 @@ The `find` command supports regular expressions. Using them can save you the ext
 For instance:
 
 ```plain-text
-find -type f -regex ".*/A[^/]+\.sh$"
+find . -type f -regex ".*/A[^/]+\.sh$"
 ```
 
-translates to "find any files that starts with A and ends with a sh extension".
+translates to "find any files that starts with A and ends with a sh extension in the current directory".
 
 
 ---
@@ -35,7 +35,7 @@ translates to "find any files that starts with A and ends with a sh extension".
 Find files that have a title containing `script` as a substring and ending in `.py` :
 
 ```bash
-??? ??? ??? 
+??? . ??? ??? 
     ??? '.*script.*\.py'
 ```
 
